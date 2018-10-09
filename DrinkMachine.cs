@@ -62,6 +62,6 @@ namespace VendingMachine
   Private void ReturnCharge()
   {
       if (RunningTotal > costOfDrink)
-          Console.WriteLine("Your charge is {0:C}", RunningTotal - costOfDrink);
+          Console.WriteLine("Your charge is {0:C}", (RunningTotal - costOfDrink) * 0.01);
   }
 }
